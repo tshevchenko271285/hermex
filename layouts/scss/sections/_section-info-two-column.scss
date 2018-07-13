@@ -1,0 +1,65 @@
+/*
+** Info Two Column
+ */
+.info-two-column {
+  padding-top: 185px;
+  padding-bottom: 215px;
+  background-size: cover;
+  background-position: 50% 50%;
+  @media(max-width: 991px) {
+    padding-top: 75px;
+    padding-bottom: 100px;
+  }
+  &_icon {
+    margin-bottom: 30px;
+    text-align: center;
+    img {
+      display: block;
+      max-width: 150px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  h2 {
+    margin-bottom: 110px;
+    text-align: center;
+    color: #fff;
+    @media(max-width: 991px) {
+      margin-bottom: 70px;
+    }
+  }
+  &_text {
+    margin-top: 65px;
+    color: #dfe6e9;
+    @media(max-width: 991px) {
+      margin-top: 30px;
+    }
+  }
+  &_border {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 15px;
+      right: 15px;
+      height: 2px;
+    }
+    &:first-child {
+      &:after {
+        background: linear-gradient(to right, #f9a606 0%, #f96711 99%);
+        @media(max-width: 991px) {
+          background: linear-gradient(to right, #f9a606 0%, #e40c1d 99%);
+        }
+      }
+    }
+    &:last-child {
+      &:after {
+        background: linear-gradient(to right, #f95d12 0%, #e30a1e 99%);
+        @media(max-width: 991px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

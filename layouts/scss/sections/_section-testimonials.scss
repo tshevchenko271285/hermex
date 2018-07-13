@@ -1,0 +1,109 @@
+/*
+** Testimonials
+ */
+.testimonials {
+  padding-top: 95px;
+  padding-bottom: 182px;
+  @media (max-width: 991px) {
+    padding-top: 60px;
+    padding-bottom: 75px;
+  }
+  h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #2d3436;
+  }
+  &_subtitle-image {
+    margin-bottom: 110px;
+    text-align: center;
+    @media(max-width: 991px) {
+      margin-bottom: 40px;
+    }
+    img {
+
+    }
+  }
+  &_column {
+    @media(max-width: 991px) {
+      margin-bottom: 25px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &_item {
+    height: 100%;
+    padding: 30px 35px 35px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    p.testimonials_column-author {
+      margin-bottom: 10px;
+      font-family: RobotoBold;
+      font-weight: 600;
+      font-size: 20px;
+      color: #2d3436;
+    }
+    p.testimonials_column-title {
+      margin-bottom: 2px;
+      font-family: RobotoBold;
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 600;
+      color: #2d3436;
+    }
+    &-stars {
+      margin-bottom: 17px;
+      font-size: 0;
+    }
+    &-star {
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      margin-right: 2px;
+      background-image: url(images/testimonial-star.png);
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+    &-text {
+      font-family: RobotoRegular;
+      font-size: 13px;
+      line-height: 18px;
+      color: #636e72;
+    }
+  }
+  &_icons {
+    margin-top: 255px;
+    @media(max-width: 991px) {
+      margin-top: 90px;
+    }
+    &-image {
+      margin-bottom: 38px;
+      text-align: center;
+      @media(max-width: 991px) {
+        margin-bottom: 30px;
+      }
+      img {
+        display: block;
+        width: 150px;
+        height: auto;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+    }
+    &-text{
+      font-family: FuturaNewBookRegular;
+      font-size: 22px;
+      text-align: center;
+      color: #a79582;
+      @media(max-width: 767px) {
+        margin-bottom: 60px;
+      }
+    }
+
+  }
+  .button-blue {
+    margin: 170px auto 0;
+    @media(max-width: 991px) {
+      margin-top: 20px;
+    }
+  }
+}

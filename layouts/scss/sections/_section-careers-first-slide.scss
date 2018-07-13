@@ -1,0 +1,32 @@
+/*
+** Careers First Slide
+ */
+.careers-first-slide {
+  padding-top: 205px;
+  padding-bottom: 190px;
+  background-size: cover;
+  @media(max-width: 991px) {
+    padding-top: 140px;
+    padding-bottom: 130px;
+  }
+  h1 {
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center;
+    @media(max-width: 991px) {
+      margin-bottom: 25px;
+    }
+  }
+  &_description {
+    max-width: 760px;
+    margin: 0 auto 95px;
+    text-align: center;
+    color: #dfe6e9;
+    @media(max-width: 991px) {
+      margin-bottom: 75px;
+    }
+  }
+  .button-border-blue {
+
+  }
+}

@@ -1,0 +1,72 @@
+/*
+** Dedicated Dealer
+ */
+.dedicated-dealer {
+  padding-top: 215px;
+  padding-bottom: 240px;
+  @media(max-width: 991px) {
+    padding-top: 130px;
+    padding-bottom: 170px;
+  }
+  &_icon {
+    margin-bottom: 35px;
+    text-align: center;
+    img {
+      display: block;
+      max-width: 150px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  h2 {
+    margin-bottom: 103px;
+    text-align: center;
+    color: #2d3436;
+    @media(max-width: 991px) {
+      margin-bottom: 70px;
+    }
+  }
+  &_text {
+    margin-top: 55px;
+    color: #636e72;
+    @media(max-width: 991px) {
+      margin-top: 0px;
+    }
+  }
+  &_border {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 15px;
+      right: 15px;
+      height: 2px;
+    }
+    &:first-child {
+      @media(max-width: 991px) {
+        padding-top: 40px;
+      }
+      &:after {
+        background: linear-gradient(to right, #55efc4 0%, #36ccdf 99%);
+        @media(max-width: 991px) {
+          background: linear-gradient(to right, #55efc4 0%, #0984e3 99%);
+        }
+      }
+    }
+    &:last-child {
+      &:after {
+        background: linear-gradient(to right, #32c5e0 0%, #0984e3 99%);
+        @media(max-width: 991px) {
+          display: none;
+        }
+      }
+    }
+  }
+  .button-blue {
+    margin-top: 155px;
+    @media(max-width: 991px) {
+      margin-top: 50px;
+    }
+  }
+}

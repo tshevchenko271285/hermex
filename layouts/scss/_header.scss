@@ -1,0 +1,179 @@
+/*
+** Header
+ */
+.header {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  &_scroll {
+    background-color: #ffffff;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,.1));
+  }
+  &__light {
+    @media(min-width: 768px) {
+      .header_menu .menu > .menu-item > a,
+      .header_menu .menu > .menu-item:after {
+        color: #dfe6e9;
+      }
+    }
+  }
+  &_boorger {
+    width: 24px;
+    &:before, &:after {
+      display: block;
+      content: '';
+      height: 2px;
+      background-color: #b2bec3;
+    }
+    &:before {
+      margin-bottom: 10px;
+    }
+    @media(min-width: 768px){
+      display: none;
+    }
+  }
+  .header_menu_close {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.5);
+    &__visible {
+      display: block;
+    }
+  }
+  &_logo {
+    display: block;
+    margin-right: 40px;
+    &-mobile {
+      display: none;
+      margin: auto;
+    }
+    @media(max-width: 1199px) {
+      margin-right: 20px;
+    }
+    @media(max-width: 991px) {
+      margin-right: 0;
+      text-align: center;
+    }
+    @media(max-width: 767px) {
+      position: absolute;
+      top: 0;
+      right: 50%;
+      transform: translateX(50%);
+      padding-top: 25px;
+      &-desktop {
+        display: none;
+      }
+      &-mobile {
+        display: block;
+      }
+    }
+  }
+  &_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    @media(max-width: 991px) {
+      //flex-direction: column;
+      }
+    @media(max-width: 767px) {
+      width: auto;
+    }
+  }
+  &_buttons-group {
+    display: flex;
+    align-items: flex-start;
+    @media(max-width: 991px) {
+      //width: 100%;
+      justify-content: space-between;
+    }
+  }
+  &_buttons-group-left {
+    visibility: hidden;
+    min-width: 155px;
+    border-left: 1px solid #b2bec3;
+    padding-left: 20px;
+    font-family: RobotoRegular;
+    @media(max-width: 1199px) {
+      min-width: 130px;
+      padding-left: 10px;
+    }
+    @media(max-width: 991px) {
+      border-left: 0;
+    }
+    @media(max-width: 767px) {
+      display: none;
+    }
+    a.sign-in {
+      display: block;
+      margin-bottom: -4px;
+      font-size: 14px;
+      line-height: 19px;
+      color: #636e72;
+    }
+    a.your-account {
+      line-height: 19px;
+      font-size: 16px;
+      color: #0984e3;
+      &:after {
+        margin-left: 5px;
+        content: '\f0dd';
+        font-family: "Font Awesome\ 5 Pro";
+        font-size: 10px;
+        vertical-align: top;
+        font-weight: 600;
+      }
+    }
+  }
+  a.button-register {
+    display: block;
+    padding: 6px 36px;
+    color: #0984e3;
+    font-size: 16px;
+    border: 1px solid #0984e3;
+    border-radius: 5px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    @media(max-width: 767px) {
+      display: none;
+    }
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+      background: #0a95ff;
+    }
+  }
+  .sign-mobile {
+    display: none;
+    font-family: RobotoRegular;
+    font-size: 12px;
+    @media(max-width: 767px) {
+      display: flex;
+      align-items: center;
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      margin-left: 10px;
+      width: 24px;
+      height: 24px;
+      background-image: url(images/sign-up-mobile.png);
+      background-position: 50% 50%;
+    }
+  }
+}

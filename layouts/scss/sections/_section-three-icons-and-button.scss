@@ -1,0 +1,40 @@
+/*
+**  Three Icons And Button
+ */
+.three-icons-and-button {
+  padding-top: 220px;
+  padding-bottom: 240px;
+  @media(max-width: 991px) {
+    padding-top: 115px;
+    padding-bottom: 115px;
+  }
+  &_icon {
+    margin-bottom: 45px;
+    text-align: center;
+    @media(max-width: 991px) {
+      margin-bottom: 30px;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      width: 145px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  &_title {
+    font-family: FuturaNewBookRegular;
+    font-size: 22px;
+    text-align: center;
+    color: #a79582;
+    @media(max-width: 991px) {
+      margin-bottom: 40px;
+    }
+  }
+  .button-blue {
+    margin-top: 195px;
+    @media(max-width: 991px) {
+      margin-top: 80px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+/*
+** Group In Numbers
+ */
+.group-in-numbers {
+  padding-top: 100px;
+  padding-bottom: 140px;
+  @media(max-width: 991px) {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+  h2 {
+    margin-bottom: 130px;
+    text-align: center;
+    @media(max-width: 991px) {
+      margin-bottom: 65px;
+    }
+  }
+  &_separator {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    @media(max-width: 991px) {
+      display: none;
+    }
+    &-item {
+      display: block;
+      margin-right: 225px;
+      width: 76px;
+      height: 76px;
+      background-image: url(images/group-in-numbers-separator.png);
+      background-position: 50% 50%;
+      background-size: cover;
+      @media(max-width: 1199px) {
+        margin-right: 165px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+  }
+  &_item {
+    margin-bottom: 25px;
+    @media (max-width: 991px) {
+      margin-bottom: 45px;
+    }
+    &-number {
+      margin-bottom: 20px;
+      font-family: FuturaNewLightReg;
+      font-size: 44px;
+      line-height: 24px;
+      text-align: center;
+      color: #a79582;
+      @media(max-width: 1199px) {
+        font-size: 36px;
+      }
+      @media(max-width: 991px) {
+        font-size: 24px;
+      }
+    }
+    &-text {
+      max-width: 200px;
+      margin: 0 auto;
+      font-family: FuturaNewBookRegular;
+      font-size: 22px;
+      text-align: center;
+      color: #a79582;
+      @media(max-width: 991px) {
+        max-width: 120px;
+        font-size: 18px;
+      }
+    }
+  }
+}

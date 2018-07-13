@@ -1,0 +1,124 @@
+/*
+** Register
+ */
+.register {
+  padding-top: 200px;
+  br {
+    display: none;
+  }
+  &_header {
+    margin-bottom: 35px;
+    padding: 15px 35px;
+    background: #0984e3;
+    text-align: left;
+    color: #fff;
+    p {
+      font-family: FuturaNewMediumReg;
+      font-size: 24px;
+    }
+  }
+  &_label-text {
+    display: block;
+    width: 300px;
+    font-size: 14px;
+    color: #636e72;
+    @media(max-width: 991px) {
+      text-align: center;
+    }
+  }
+  .wpcf7-form {
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      @media(max-width: 991px) {
+        flex-direction: column;
+      }
+      .wpcf7-form-control {
+        width: 280px;
+        margin-left: 0;
+        padding: 5px 15px;
+        border: 1px solid #9b9d9e;
+        border-radius: 3px;
+        &:active, &:hover, &:focus {
+          outline: 0;
+          outline-offset: 0;
+          background: #fff;
+          position: relative;
+          z-index: 2;
+        }
+        input[type=checkbox] {
+          margin-right: 25px;
+        }
+        span.wpcf7-list-item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          label {
+            flex-direction: row;
+
+          }
+        }
+      }
+      .wpcf7-select {
+        padding: 7px 0;
+      }
+      .wpcf7-checkbox,
+      .wpcf7-acceptance {
+        position: relative;
+        margin-left: 0;
+        border: 0;
+        input[type="checkbox"] {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          visibility: hidden;
+          &:before {
+            content: '\f0c8';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            font-weight: 400;
+            font-family: "Font Awesome\ 5 Pro";
+            visibility: visible;
+          }
+          &:checked {
+            &:before {
+              content: '\f14a';
+            }
+          }
+        }
+      }
+      span.wpcf7-not-valid-tip {
+        position: absolute;
+        left: 10px;
+        bottom: 9px;
+        display: flex;
+        align-items: flex-end;
+        padding: 0 10px;
+        font-size: 12px;
+        background: #fff;
+      }
+    }
+    .wpcf7-list-item-label {
+      font-size: 14px;
+      color: #2d3436;
+    }
+  }
+  .button-blue {
+    width: 100%;
+    margin-top: 50px;
+    border: 0;
+    &:active, &:hover, &:focus {
+      outline: 0;
+      outline-offset: 0;
+    }
+  }
+  .button-blue:disabled {
+    opacity: 0.5;
+    &:hover {
+      cursor: default;
+    }
+  }
+}

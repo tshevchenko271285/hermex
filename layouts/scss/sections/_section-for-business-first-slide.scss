@@ -1,0 +1,23 @@
+/*
+** For Business First Slide
+ */
+.for-business-first-slide {
+  padding: 205px 0 75px;
+  @media(max-width: 991px) {
+    padding: 150px 0 30px;
+  }
+  h1 {
+    margin-bottom: 45px;
+    text-align: center;
+    color: #2d3436;
+  }
+  &_text {
+    margin: 0 auto 100px;
+    max-width: 760px;
+    text-align: center;
+    color: #636e72;
+  }
+  .button-blue {
+
+  }
+}

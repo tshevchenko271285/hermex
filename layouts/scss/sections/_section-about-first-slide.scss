@@ -1,0 +1,61 @@
+/*
+** About First Slide
+ */
+.about-first-slide {
+  padding-top: 205px;
+  padding-bottom: 140px;
+  text-align: center;
+  color: #fff;
+  background-position: 50% 50%;
+  background-size: cover;
+  @media(max-width: 991px) {
+    padding-top: 130px;
+    padding-bottom: 95px;
+  }
+  h1 {
+    margin-bottom: 15px;
+    @media(max-width: 991px) {
+      margin-bottom: 25px;
+    }
+  }
+  h2 {
+    margin-bottom: 40px;
+    @media(max-width: 991px) {
+      margin-bottom: 30px;
+    }
+  }
+  &_page-description {
+    margin: 0 auto 70px;
+    max-width: 760px;
+    font-size: 16px;
+    color: #dfe6e9;
+    @media(max-width: 991px) {
+      margin-bottom: 60px;
+    }
+  }
+  .button-blue {
+    margin: 0 auto 235px;
+    @media(max-width: 991px) {
+          margin-bottom: 110px;
+        }
+  }
+  &_text {
+    margin: 0 auto 40px;
+    max-width: 760px;
+    font-size: 16px;
+    color: #dfe6e9;
+    @media(max-width: 991px) {
+      margin-bottom: 65px;
+    }
+  }
+  &_image {
+
+    img {
+      display: block;
+      max-width: 110px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+
+}

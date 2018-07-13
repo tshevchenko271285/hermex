@@ -1,0 +1,58 @@
+/*
+** Partner Support
+ */
+.partner-support {
+  padding-top: 145px;
+  padding-bottom: 65px;
+  background-size: cover;
+  @media(max-width: 991px) {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+  h2 {
+    margin-bottom: 22px;
+    color: #fff;
+    text-align: center;
+    @media(max-width: 991px) {
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+  }
+  &_text {
+    margin-bottom: 145px;
+    color: #fff;
+    text-align: center;
+    @media(max-width: 991px) {
+      margin-bottom: 35px;
+      font-size: 14px;
+    }
+  }
+  &_icon {
+    margin-bottom: 65px;
+    @media(max-width: 991px) {
+      margin-bottom: 20px;
+    }
+    &-image {
+      margin-bottom: 27px;
+      img {
+        display: block;
+        width: 35px;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+    &-text {
+      max-width: 265px;
+      margin: 0 auto;
+      font-family: FuturaNewMediumReg;
+      font-size: 18px;
+      text-align: center;
+      color: #a79582;
+      @media(max-width: 991px) {
+        font-size: 16px;
+        letter-spacing: -0.5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+/*
+** Typography
+ */
+body {
+  font-family: RobotoBold;
+}
+h1 {
+  font-family: FuturaNewLightReg;
+  font-size: 64px;
+  line-height: 64px;
+  @media(max-width: 991px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+h2 {
+  font-family: FuturaNewLightReg;
+  font-size: 40px;
+  @media(max-width: 991px) {
+    font-size: 30px;
+  }
+}
+h3 {
+  font-family: FuturaNewLightReg;
+  font-size: 30px;
+  @media(max-width: 991px) {
+    font-size: 24px;
+  }
+}
+h4 {
+  font-family: FuturaNewMediumReg;
+  font-size: 24px;
+}
+p {
+  font-size:16px;
+  margin-bottom: 25px;
+  @media(max-width: 991px) {
+    font-size: 14px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

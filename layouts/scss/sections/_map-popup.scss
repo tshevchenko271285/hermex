@@ -1,0 +1,36 @@
+/*
+** PopUp Google Maps
+ */
+.map-popup {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999; /* To overlap social icons */
+  background: rgba(255,255,255,.5);
+  &_map {
+    width: 90%;
+    height: 90%;
+  }
+  &_close {
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    z-index: 3;
+    @media(max-width: 767px) {
+      top: 75px;
+    }
+    i {
+      font-size: 25px;
+      color: #2d3436;
+      &:hover {
+        cursor: pointer;
+        color: #b2bec3;
+      }
+    }
+  }
+}

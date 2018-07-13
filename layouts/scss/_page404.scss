@@ -1,0 +1,24 @@
+.page404 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &_image {
+    margin: 0 auto;
+    width: 200px;
+    height: 150px;
+    background-image: url(images/404.png);
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  &_text {
+    margin: 30px auto 65px;
+    text-align: center;
+    color: #636e72;
+  }
+  .button-blue {
+    max-width: 200px;
+    width: 200px;
+  }
+}

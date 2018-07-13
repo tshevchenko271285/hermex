@@ -1,0 +1,195 @@
+/*
+** Contact Us
+ */
+.contact-us {
+  padding-top: 205px;
+  padding-bottom: 260px;
+  @media(max-width: 991px) {
+    padding-top: 130px;
+    padding-bottom: 95px;
+  }
+  h1 {
+    margin-bottom: 45px;
+    text-align: center;
+    color: #2d3436;
+    @media(max-width: 991px) {
+      margin-bottom: 20px;
+    }
+  }
+  &_description {
+    max-width: 760px;
+    margin: 0 auto 135px;
+    text-align: center;
+    color: #636e72;
+    @media(max-width: 991px) {
+      margin-bottom: 50px;
+    }
+  }
+  &_top-panel {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #dfe6e9;
+    @media(max-width: 767px) {
+      padding-bottom: 0;
+      border: 0;
+    }
+    &-icon {
+      margin-bottom: 20px;
+      img {
+        display: block;
+        width: 38px;
+        height: auto;
+      }
+    }
+    &-title {
+      font-family: RobotoRegular;
+      font-size: 24px;
+      color: #2d3436;
+    }
+    &-subtitle {
+      color: #b2bec3;
+    }
+  }
+  &_bottom-panel {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #dfe6e9;
+    @media(max-width: 767px) {
+      flex-direction: column-reverse;
+      border: 0;
+    }
+    &-left {
+      padding-top: 45px;
+      @media(max-width: 767px) {
+        padding-top: 30px;
+      }
+    }
+    &-right {
+      width: 300px;
+      padding-top: 35px;
+      @media(max-width: 991px) {
+        width: 220px;
+      }
+      @media(max-width: 767px) {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        border-bottom: 1px solid #dfe6e9;
+        background-image: url(images/company-profile-btn-map.png);
+        background-position: 0px 23px;
+        background-repeat: no-repeat;
+      }
+    }
+    &-subphone {
+      margin-bottom: 0;
+      color: #b2bec3;
+    }
+    &-phone {
+      margin-bottom: 28px;
+      font-family: RobotoLight;
+      line-height: 35px;
+      font-size: 31px;
+      color: #a79582;
+      @media(max-width: 991px) {
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
+    }
+    &-email {
+      display: inline-flex;
+      align-items: center;
+      @media(max-width: 767px) {
+        font-size: 14px;
+      }
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        margin: 0 15px;
+        border-radius: 50%;
+        background: #36393a;
+        @media(max-width: 767px) {
+          margin: 0 10px;
+        }
+      }
+    }
+    &-url {
+      @media(max-width: 767px) {
+        font-size: 14px;
+      }
+    }
+    &-building-title {
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: #636e72;
+      @media(max-width: 767px) {
+        display: none;
+      }
+    }
+    &-building-address {
+      &-desktop {
+        margin-bottom: 25px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #2d3436;
+        @media(max-width: 767px) {
+          display: none;
+        }
+      }
+      &-mobile {
+        display: none;
+        font-size: 14px;
+        font-weight: 600;
+        @media(max-width: 767px) {
+          display: block;
+        }
+        br {
+          display: none;
+        }
+      }
+    }
+    &-building-button {
+      &-desktop {
+        display: inline-block;
+        padding: 7px 15px 7px 50px;
+        font-family: RobotoMedium;
+        font-size: 16px;
+        color: #0984e3;
+        border: 1px solid #0984e3;
+        border-radius: 5px;
+        background-image: url(images/company-profile-btn-map.png);
+        background-position: 5% 50%;
+        background-repeat: no-repeat;
+        @media(max-width: 767px) {
+          display: none;
+        }
+      }
+      &-mobile {
+        font-size: 12px;
+        color: #636e72;
+        font-weight: 600;
+        display: none;
+        @media(max-width: 767px) {
+          display: block;
+        }
+      }
+    }
+    &-building-image {
+      position: absolute;
+      bottom: -70px;
+      right: 325px;
+      width: 335px;
+      @media(max-width: 991px) {
+        display: none;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

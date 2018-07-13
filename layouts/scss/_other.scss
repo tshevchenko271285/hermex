@@ -1,0 +1,63 @@
+/*****************************
+****     Other Styles     ****
+*****************************/
+
+
+/*
+** PopUp Used Cookies
+ */
+.use-cookie {
+  position: fixed;
+  right: -280px;
+  top: 30%;
+  z-index: 1;
+  width: 280px;
+  padding: 25px 30px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  -webkit-transition: right .3s;
+  -moz-transition: right .3s;
+  -ms-transition: right .3s;
+  -o-transition: right .3s;
+  transition: right .3s;
+  &__visible {
+    right: 20px;
+    @media(max-width: 767px) {
+      right: 50%;
+      transform: translate(50%);
+    }
+  }
+  p {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  &_read-more {
+
+  }
+  .button-blue {
+    display: inline-block;
+    width: 60px;
+    padding: 6px 0;
+    margin-right: 15px;
+  }
+}
+/*
+** Google Rating
+ */
+#google-rating-element {
+  position: fixed;
+  z-index: 1;
+  bottom: 25px;
+  left: 5px;
+  @media(max-width: 767px) {
+    position: static;
+    //left: 0;
+    //bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+#google-rating-element-hint {
+  display: none;
+}
